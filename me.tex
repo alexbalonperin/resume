@@ -3,12 +3,9 @@
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 \usepackage{bibentry}
-
-\usepackage{array, xcolor}
-\definecolor{lightgray}{gray}{0.8}
-\newcolumntype{L}{>{\raggedleft}p{0.14\textwidth}}
-\newcolumntype{R}{p{0.8\textwidth}}
-\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+\usepackage{enumitem}
+\setlength{\textheight}{9.6in}
+\setitemize{leftmargin=*}
 
 \begin{document}
 
@@ -18,39 +15,36 @@
  
 \begin{resume}
  
-\section{OBJECTIVE} A position in the field of software engineering with special interests in Machine Learning in a company that promotes innovation and employee's development. 
+\section{OBJECTIVE} A position in the field of software engineering with special interests in Machine Learning in a
+company that promotes innovation and employee's growth. 
  
-\section{COMPUTER \\ SKILLS} 
-                 \begin{itemize}  \itemsep -1pt % reduce space between items
-                  \item {\sl Main Languages \& Software:} Ruby, Scala, SQL, Ruby on Rails, Play, Java, Javascript, AJAX, jQuery, Coffeescript,
-  HTML/CSS/HAML, Meteor, Matlab, R, Python, PostgreSQL
-                  \item {\sl Operating Systems \& Tools:} MacOS, Unix, Ubuntu, Vim, IntelliJ, JIRA, Jenkins, Git, Github
-                  \item {\sl Concepts:} Multi-agent systems, Machine learning, Data mining, Swarm intelligence, Computer security (OWASP)
+\section{COMPUTER \\ SKILLS}
+                 \begin{itemize} % reduce space between items
+                  \item {\sl Languages \& Software:} Ruby, Scala, SQL, Ruby on Rails, Play, Java, Javascript, AJAX, jQuery, Coffeescript, Meteor, Matlab, R, Python, PostgreSQL.
+                  \item {\sl Operating Systems \& Tools:} MacOS, Unix, Ubuntu, Vim, IntelliJ, JIRA, Jenkins, Git, Github.
+                  \item {\sl Concepts:} Multi-agent systems, Machine learning, Data mining, Swarm intelligence, Computer security (OWASP).
                 \end{itemize}
  
 \section{EXPERIENCE} {\sl Software Engineer} | Gilt Groupe Japan \hfill Jan 2014 - Present\\
-                 \begin{itemize}  \itemsep -1pt % reduce space between items
-                  \item  Maintain, evolve and clean up the main legacy Admin application using Ruby on Rails as well as
-                    the main PostgreSQL database.
+                 \begin{itemize} % reduce space between items
+                  \item  Maintain, evolve and clean up the main legacy Admin application using Ruby on Rails as well as the main PostgreSQL database.
                   \item  Maintain and improve our sale creation tool using Meteor and MongoDB.
-                  \item  Develop new applications, tools and services using the following technologies: Ruby on Rails,
-                    Scala, Play Framework, MyBatis, SQL, ElasticSearch, Meteor, MongoDB, PL/pgSQL.
+                  \item  Develop new applications, tools and services using the following technologies: Ruby on Rails, Scala, Play Framework, MyBatis, SQL, ElasticSearch, Meteor, MongoDB.
                  \end{itemize}
  
                 {\sl Software Engineer Freelance} | LH Interactive SARL \hfill            Apr 2013 - Oct 2013\\
-                 \begin{itemize}  \itemsep -1pt %reduce space between items
+                 \begin{itemize} %reduce space between items
                   \item Implemented CRUD functions for entities such as shops and malls as well as moderation tools for the admin portal FIRE in PHP, Javascript and AJAX. 
                  \end{itemize} 
 
                 {\sl Researcher} | ICT4Rehab project (ULB)\hfill        Nov 2012 - Feb 2013 \\
-                  \begin{itemize} \itemsep -1pt
+                  \begin{itemize}
                    \item Designed and implemented in Java a parser for C3D files including sanity check, data normalization, etc.
                    \item Built an importer for large sets of C3D files.
                   \end{itemize} 
 
 \section{EDUCATION} {\sl MSc Computer Engineering} \hfill   Sept 2010 - Sept 2012 \\
-                    Norwegian University of Science and Technology - Faculty of information technology, mathematics and
-                    electronics \\
+                    Norwegian University of Science and Technology - Faculty of information technology, mathematics and electronics \\
                     Concentration: Computational Intelligence
  
                     {\sl BSc Engineering} \hfill   Sept 2007 - June 2010 \\
@@ -60,17 +54,15 @@
 \section{PERSONAL \\ PROJECTS} {\sl Goodmoove, } Co-Founder \hfill Jan 2012 – Jan 2014\\
                   \begin{itemize} \itemsep -1pt
                    \item Involved in every aspects of the project management, including defining the business strategy,
-                     pitching the project to investors and managing customer support.
+                     pitching to investors and managing customer support.
                    \item Developed the front-end and back-end of the web application in Ruby on Rails and deployed
                      to Heroku.
                   \end{itemize} 
 \bibliographystyle{plain}
 \nobibliography{publication.bib}
 \section{PUBLICATIONS} 
-\begin{tabular}{L!{\VRule}R}
-  2013&\bibentry{IDS2013}\\[5pt]
-  2012&\bibentry{IDS2012}\\
-\end{tabular}
+  \bibentry{IDS2013}\\[5pt]
+  \bibentry{IDS2012}\\
 
 \end{resume}
 \end{document}
